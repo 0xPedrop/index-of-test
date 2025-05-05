@@ -1,47 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xGroup - PoC</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjhuengwejZzdXhjNW50ZnUzeXNqdWRiM2tmemw1ZnFmNXJ1MHNtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vP4ci3sz5YZHi/giphy.gif");
-            background-size: cover;  
-            background-repeat: no-repeat;  
-            background-position: center;
-        }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>XSS PoC</title>
+  </head>
+  <body>
+    <h1>Redirected!</h1>
+    <p>If you see an alert, XSS was executed.</p>
 
-        h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 5px red;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin: 10px;
-        }
-
-        img {
-            margin-top: 20px;
-            width: 150px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>HACKED BY 0xPEDROP</h1>
-    <p>OWNED</p>
+    <script>
+      alert("XSS Executado com sucesso!");
+    </script>
+  </body>
 </html>
-
-
